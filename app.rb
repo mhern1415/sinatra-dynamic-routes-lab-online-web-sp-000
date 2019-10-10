@@ -15,12 +15,11 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do
-    @name = params[:name]
+    @phrase = params[:phrase]
     @number = params[:number].to_i
     erb :numbersphrase
-    
-    
-    
   end
+  
+  
 
 end
